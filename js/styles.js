@@ -1,9 +1,3 @@
-//Business Logic
-
-
-
-
-//User Interface Logic
 let form = document.querySelector("form");
 form.onsubmit = function(event) {
   event.preventDefault();
@@ -18,11 +12,18 @@ form.onsubmit = function(event) {
 
   console.log("submit form successful")
 
-  document.querySelector("#zodiac")
-
+if (celebrity === "N/A") {
+  alert("Pick a celebrity!")
+}
 
 }
 
 
-let result;
-  if (celebrity === "Willem Dafoe") && 
+  if (celebrity === "Willem Dafoe") || (media === "movies") || (direction == "left") || (color = "purple") {
+    document.getElementById("Python")
+  } else if (celebrity === "Beyonce") || (media === "Video Games") || (direction == "right") || (color === "pink") {
+    document.getElementById("C#").show();
+  } else if (celebrity === "Wendy Williams") && (media === "television") || (color === "red") {
+    document.getElementById("JavaScript")
+  } else 
+

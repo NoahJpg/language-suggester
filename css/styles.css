@@ -20,7 +20,7 @@ p{
   font-weight: bold;
 }
 
-.Q1title {
+.Q2title {
   text-align: center
 }
 
@@ -49,8 +49,16 @@ p{
   font-weight: bold;
 }
 
+.Q5 {
+  border: 10px solid lemonchiffon;
+  margin-left: 400px;
+  margin-right: 400px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
 .submit{
-  border: 10px solid lightpink;
+  border: 10px solid lightblue;
   margin-left: 400px;
   margin-right: 400px;
   font-weight: bold;
