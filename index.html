@@ -35,7 +35,7 @@
 
           <div class="Q3">
             <label for="Question3">Be convicted!</label>
-            <select id="Direction" name="Direction">
+            <select id="direction" name="direction">
               <option value="N/A">- Choose a direction -</option>
               <option value="up">Up</option>
               <option value="down">Down</option>
@@ -44,7 +44,7 @@
 
           <div class="Q4">
             <label for="Question4">Favorite Musical Genre:</label>
-            <select id="media" name="media">
+            <select id="genre" name="genre">
               <option value="N/A">- Choose one -</option>
               <option value="glitch-hop">Glitch Hop</option>
               <option value="shoegaze">Shoegaze</option>
@@ -64,9 +64,10 @@
             </select>
           </div>
 
-          <input type="submit" class="btn">
+          <button type="submit">Submit!</button>
 
         </form>
+        <button type="button" class="hidden" id="reset">Reset</button>
 
         <div class="hidden" id="Python">
           <!-- <img src="/img/python.jpg" alt="snake"> -->

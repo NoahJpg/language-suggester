@@ -1,12 +1,11 @@
 window.onload = function() {
-
   let form = document.querySelector("form");
 
   form.onsubmit = function(event) {
     event.preventDefault();
 
-    let celebrity = document.getElementById("celebrity");
-    let zodiac = document.getElementById("zodiac");
+    let celebrity = document.getElementById("#celebrity")
+    let media = document.getElementById("media").value();
     let direction = document.getElementById("direction");
     let genre = document.getElementById("genre");
     let color = document.getElementById("color");
@@ -26,5 +25,7 @@ window.onload = function() {
     } else {
       form.removeAttribute("class")
     }
+    
+
   }
 }
