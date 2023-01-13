@@ -1,0 +1,57 @@
+body{
+  background-color: white;
+}
+.container {
+text-align: center;
+}
+
+h1 {
+  font-weight: bold;
+  background-color: lemonchiffon;
+}
+p{
+  background-color: lightblue;
+}
+.Q1{
+  border: 10px solid rgb(255, 212, 212);
+  margin-left: 400px;
+  margin-right: 400px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.Q1title {
+  text-align: center
+}
+
+.Q2{
+  border: 10px solid lavender;
+  text-align: left;
+  margin-left: 400px;
+  margin-right: 400px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.Q3{
+  border: 10px solid lightblue;
+  margin-left: 400px;
+  margin-right: 400px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.Q4{
+  border: 10px solid lightgreen;
+  margin-left: 400px;
+  margin-right: 400px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.submit{
+  border: 10px solid lightpink;
+  margin-left: 400px;
+  margin-right: 400px;
+  font-weight: bold;
+}

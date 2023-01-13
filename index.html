@@ -9,7 +9,7 @@
   <body>
     <div class="container">
       <h1>Programming Language Suggester</h1>
-      <p>These questions will decide your fate for the next several months. Choose wisely!</p>
+      <p>These questions will decide your fate for the next several months. <em>Choose wisely!</em></p>
       <div class="questions">
         <form>
           <div class="Q1">
@@ -23,21 +23,15 @@
             </select>
           </div>
           <div class="Q2">
-            <label for="Question2">Pick a Zodiac Sign:</label>
-            <select id="Zodiac" name="Zodiac">
-              <option value="N/A">-Choose one-</option>
-              <option value="Aries">Aries</option>
-              <option value="Taurus">Taurus</option>
-              <option value="Gemini">Gemini</option>
-              <option value="Cancer">Cancer</option>
-              <option value="Leo">Leo</option>
-              <option value="Virgo">Virgo</option>
-              <option value="Libra">Libra</option>
-              <option value="Scorpio">Scorpio</option>
-              <option value="Sagittarius">Sagittarius</option>
-              <option value="Capricorn">Capricorn</option>
-              <option value="Aquarius">Aquarius</option>
-              <option value="Pisces">Pisces</option>
+            <label for="Question4">Media Consumption Choice</label><br>
+            <input type="radio" id="Television" name="media">
+            <label for="television">Television</label><br>
+            <input type="radio" id="videogames" name="media">
+            <label for="Video Games">Video Games</label><br>
+            <input type="radio" id="books" name="media">
+            <label for="books">Books</label><br>
+            <input type="radio" id="IOP" name="media">
+            <label for="">Italian Occult Psychadelia</label><br>
             </select>
           </div>
 
@@ -47,7 +41,7 @@
               <option value="N/A">-Choose a direction-</option>
               <option value="Left">Left</option>
               <option value="Right">Right</option>
-            </select><br>
+            </select>
           </div>
 
           <div class="Q4">
@@ -57,12 +51,12 @@
             <input type="radio" id="shoegaze" name="fav-genre">
             <label for="shoegaze">Shoegaze</label><br>
             <input type="radio" id="horror-country" name="fav-genre">
-            <label for="glitch-hop">Horror Country</label><br>
+            <label for="horror-country">Horror Country</label><br>
             <input type="radio" id="IOP" name="fav-genre">
             <label for="IOP">Italian Occult Psychadelia</label><br>
           </div>
 
-          <input type="submit">
+          <input type="submit" class="submit">
 
         </form>
       </div>

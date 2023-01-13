@@ -12,7 +12,7 @@ form.onsubmit = function(event) {
   var celebrity = document.querySelector("input#celebrity").value;
   var zodiac = document.querySelector("input#zodiac").value;
   var direction = document.querySelector("input#direction").value;
-  var 
+  var genre = document.querySelector("input#genre").value;
 
   const userInput = document.getElementById("celebrity").value;
 
@@ -25,4 +25,4 @@ form.onsubmit = function(event) {
 
 
 let result;
-  if 
+  if (celebrity === "Willem Dafoe") && 
