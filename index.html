@@ -11,21 +11,19 @@
       <h1>Programming Language Suggester</h1>
       <p>These questions will decide your fate for the next several months. <em>Choose wisely!</em></p>
       <div class="questions">
-        <form>
+        <form id="select-form">
           <div class="Q1">
             <label for="Question1">Pick a celebrity:</label>
             <select id="celebrity" name="celebrity">
-              <option value="N/A">- Choose one -</option>
-              <option value="Robert Pattinson">Robert Pattinson</option>
-              <option value="Beyonce">Beyonce</option>
-              <option value="Willem Dafoe">Willem Dafoe</option>
-              <option value="Wendy Williams">Wendy Williams</option>
+              <option value="robert">Robert Pattinson</option>
+              <option value="beyonce">Beyonce</option>
+              <option value="willem">Willem Dafoe</option>
+              <option value="wendy">Wendy Williams</option>
             </select>
           </div>
           <div class="Q2">
             <label for="Question2">Media Consumption Choice:</label>
             <select id="media" name="media">
-              <option value="N/A">- Choose one -</option>
               <option value="television">Television</option>
               <option value="videogames">Video Games</option>
               <option value="books">Books</option>
@@ -36,7 +34,6 @@
           <div class="Q3">
             <label for="Question3">Be convicted!</label>
             <select id="direction" name="direction">
-              <option value="N/A">- Choose a direction -</option>
               <option value="up">Up</option>
               <option value="down">Down</option>
             </select>
@@ -45,7 +42,6 @@
           <div class="Q4">
             <label for="Question4">Favorite Musical Genre:</label>
             <select id="genre" name="genre">
-              <option value="N/A">- Choose one -</option>
               <option value="glitch-hop">Glitch Hop</option>
               <option value="shoegaze">Shoegaze</option>
               <option value="horror-country">Horror Country</option>
@@ -56,7 +52,6 @@
           <div class="Q5">
             <label for="Question5">Favorite Color:</label>
             <select id="color" name="color">
-              <option value="N/A">- Choose a color -</option>
               <option value="red">Red</option>
               <option value="green">Green</option>
               <option value="pink">Pink</option>
@@ -67,10 +62,10 @@
           <button type="submit">Submit!</button>
 
         </form>
-        <button type="button" class="hidden" id="reset">Reset</button>
 
         <div class="hidden" id="Python">
           <!-- <img src="/img/python.jpg" alt="snake"> -->
+          <p>python</p>
         </div>
 
         <div class="hidden" id="C#">
