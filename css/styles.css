@@ -26,7 +26,6 @@ p{
 
 .Q2{
   border: 10px solid lavender;
-  text-align: left;
   margin-left: 400px;
   margin-right: 400px;
   margin-bottom: 20px;
@@ -57,9 +56,13 @@ p{
   font-weight: bold;
 }
 
-.submit{
+.btn{
   border: 10px solid lightblue;
   margin-left: 400px;
   margin-right: 400px;
   font-weight: bold;
+}
+
+.hidden {
+  display: none;
 }

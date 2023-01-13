@@ -14,7 +14,7 @@
         <form>
           <div class="Q1">
             <label for="Question1">Pick a celebrity:</label>
-            <select id="Celebrity" name="Celebrity">
+            <select id="celebrity" name="celebrity">
               <option value="N/A">- Choose one -</option>
               <option value="Robert Pattinson">Robert Pattinson</option>
               <option value="Beyonce">Beyonce</option>
@@ -23,15 +23,13 @@
             </select>
           </div>
           <div class="Q2">
-            <label for="Question2">Media Consumption Choice:</label><br>
-            <input type="radio" id="television" name="media">
-            <label for="television">Television</label><br>
-            <input type="radio" id="videogames" name="media">
-            <label for="videogames">Video Games</label><br>
-            <input type="radio" id="books" name="media">
-            <label for="books">Books</label><br>
-            <input type="radio" id="movies" name="media">
-            <label for="movies">Movies</label><br>
+            <label for="Question2">Media Consumption Choice:</label>
+            <select id="media" name="media">
+              <option value="N/A">- Choose one -</option>
+              <option value="television">Television</option>
+              <option value="videogames">Video Games</option>
+              <option value="books">Books</option>
+              <option value="movies">Movies</option>
             </select>
           </div>
 
@@ -39,21 +37,20 @@
             <label for="Question3">Be convicted!</label>
             <select id="Direction" name="Direction">
               <option value="N/A">- Choose a direction -</option>
-              <option value="Left">Left</option>
-              <option value="Right">Right</option>
+              <option value="up">Up</option>
+              <option value="down">Down</option>
             </select>
           </div>
 
           <div class="Q4">
-            <label for="Question4">Favorite Musical Genre:</label><br>
-            <input type="radio" id="glitch-hop" name="fav-genre">
-            <label for="glitch-hop">Glitch Hop</label><br>
-            <input type="radio" id="shoegaze" name="fav-genre">
-            <label for="shoegaze">Shoegaze</label><br>
-            <input type="radio" id="horror-country" name="fav-genre">
-            <label for="horror-country">Horror Country</label><br>
-            <input type="radio" id="IOP" name="fav-genre">
-            <label for="IOP">Italian Occult Psychadelia</label><br>
+            <label for="Question4">Favorite Musical Genre:</label>
+            <select id="media" name="media">
+              <option value="N/A">- Choose one -</option>
+              <option value="glitch-hop">Glitch Hop</option>
+              <option value="shoegaze">Shoegaze</option>
+              <option value="horror-country">Horror Country</option>
+              <option value="iop">Italian Occult Psychadeila</option>
+            </select>
           </div>
 
           <div class="Q5">
@@ -67,26 +64,21 @@
             </select>
           </div>
 
-
-          <input type="submit" class="submit">
+          <input type="submit" class="btn">
 
         </form>
 
-        <div class="result" id="Python">
-          <img src="/img/python.jpg" alt="snake">
-
+        <div class="hidden" id="Python">
+          <!-- <img src="/img/python.jpg" alt="snake"> -->
         </div>
 
-        <div class="result" id="C#">
-          <img src="/img/c#.png" alt="See Sharp">
-          
+        <div class="hidden" id="C#">
+          <!-- <img src="/img/c#.png" alt="See Sharp">    -->
         </div>
 
-        <div class="result" id="JavaScript">
-          <img src="/img/javascript.jpg" alt="java script">
-          
+        <div class="hidden" id="JavaScript">
+          <!-- <img src="/img/javascript.jpg" alt="java script"> -->
         </div>
-
 
       </div>
     </div>
