@@ -1,55 +1,71 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <title>Programming Language Suggester</title>
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <script src="js/styles.js"></script>
-  </head>
-<body>
+<head>
+  <title>Programming Language Suggester</title>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link  href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/styles.js"></script>
+</head>
+  <body>
+    <div class="container">
+      <h1>Programming Language Suggester</h1>
+      <p>These questions will decide your fate for the next several months. Choose wisely!</p>
+      <div class="questions">
+        <form>
+          <div class="Q1">
+            <label for="Question1">Pick a celebrity:</label>
+            <select id="Celebrity" name="Celebrity">
+              <option value="N/A">-Choose one-</option>
+              <option value="Robert Pattinson">Robert Pattinson</option>
+              <option value="Beyonce">Beyonce</option>
+              <option value="Willem Dafoe">Willem Dafoe</option>
+              <option value="Wendy Williams">Wendy Williams</option>
+            </select>
+          </div>
+          <div class="Q2">
+            <label for="Question2">Pick a Zodiac Sign:</label>
+            <select id="Zodiac" name="Zodiac">
+              <option value="N/A">-Choose one-</option>
+              <option value="Aries">Aries</option>
+              <option value="Taurus">Taurus</option>
+              <option value="Gemini">Gemini</option>
+              <option value="Cancer">Cancer</option>
+              <option value="Leo">Leo</option>
+              <option value="Virgo">Virgo</option>
+              <option value="Libra">Libra</option>
+              <option value="Scorpio">Scorpio</option>
+              <option value="Sagittarius">Sagittarius</option>
+              <option value="Capricorn">Capricorn</option>
+              <option value="Aquarius">Aquarius</option>
+              <option value="Pisces">Pisces</option>
+            </select>
+          </div>
 
-  <h1>Programming Language Suggester</h1>
-  <p>These questions will decide your fate for the next several months. Choose wisely!</p>
+          <div class="Q3">
+            <label for="Question3">Be convicted!</label>
+            <select id="Direction" name="Direction">
+              <option value="N/A">-Choose a direction-</option>
+              <option value="Left">Left</option>
+              <option value="Right">Right</option>
+            </select><br>
+          </div>
 
-  <form>
-    <label for="Question1">Pick a celebrity:</label>
-    <select id="Celebrity" name="Celebrity">
-      <option value="N/A">-Choose one-</option>
-      <option value="Robert Pattinson">Robert Pattinson</option>
-      <option value="Beyonce">Beyonce</option>
-      <option value="Willem Dafoe">Willem Dafoe</option>
-      <option value="Wendy Williams">Wendy Williams</option>
-    </select>
-    
-    <label for="Question2">Pick a Zodiac Sign:</label>
-    <select id="Zodiac" name="Zodiac">
-      <option value="N/A">-Choose one-</option>
-      <option value="Aries">Aries</option>
-      <option value="Taurus">Taurus</option>
-      <option value="Gemini">Gemini</option>
-      <option value="Cancer">Cancer</option>
-      <option value="Leo">Leo</option>
-      <option value="Virgo">Virgo</option>
-      <option value="Libra">Libra</option>
-      <option value="Scorpio">Scorpio</option>
-      <option value="Sagittarius">Sagittarius</option>
-      <option value="Capricorn">Capricorn</option>
-      <option value="Aquarius">Aquarius</option>
-      <option value="Pisces">Pisces</option>
-    </select>
+          <div class="Q4">
+            <label for="Question4">Favorite Musical Genre:</label><br>
+            <input type="radio" id="glitch-hop" name="fav-genre">
+            <label for="glitch-hop">Glitch Hop</label><br>
+            <input type="radio" id="shoegaze" name="fav-genre">
+            <label for="shoegaze">Shoegaze</label><br>
+            <input type="radio" id="horror-country" name="fav-genre">
+            <label for="glitch-hop">Horror Country</label><br>
+            <input type="radio" id="IOP" name="fav-genre">
+            <label for="IOP">Italian Occult Psychadelia</label><br>
+          </div>
 
-    <label for="Question3">Be convicted!</label>
-    <select id="Direction" name="Direction">
-      <option value="N/A">-Choose one-</option>
-      <option value="Left">Left</option>
-      <option value="Right">Right</option>
+          <input type="submit">
 
-      <input type="submit">
-    </select>
-  </form>
-
-
-
-
-
-</body>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
