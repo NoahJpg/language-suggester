@@ -4,17 +4,17 @@
   <title>Programming Language Suggester</title>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link  href="css/styles.css" rel="stylesheet" type="text/css">
-  <script src="js/styles.js"></script>
+  <script src="js/scripts.js"></script>
 </head>
   <body>
     <div class="container">
       <h1>Programming Language Suggester</h1>
       <p>These questions will decide your fate for the next several months. <em>Choose wisely!</em></p>
       <div class="questions">
-        <form id="select-form">
+        <form id="form">
           <div class="Q1">
             <label for="Question1">Pick a celebrity:</label>
-            <select id="celebrity" name="celebrity">
+            <select id="celebrity">
               <option value="robert">Robert Pattinson</option>
               <option value="beyonce">Beyonce</option>
               <option value="willem">Willem Dafoe</option>
@@ -23,7 +23,7 @@
           </div>
           <div class="Q2">
             <label for="Question2">Media Consumption Choice:</label>
-            <select id="media" name="media">
+            <select id="media">
               <option value="television">Television</option>
               <option value="videogames">Video Games</option>
               <option value="books">Books</option>
@@ -33,7 +33,7 @@
 
           <div class="Q3">
             <label for="Question3">Be convicted!</label>
-            <select id="direction" name="direction">
+            <select id="direction">
               <option value="up">Up</option>
               <option value="down">Down</option>
             </select>
@@ -41,7 +41,7 @@
 
           <div class="Q4">
             <label for="Question4">Favorite Musical Genre:</label>
-            <select id="genre" name="genre">
+            <select id="genre">
               <option value="glitch-hop">Glitch Hop</option>
               <option value="shoegaze">Shoegaze</option>
               <option value="horror-country">Horror Country</option>
@@ -51,7 +51,7 @@
 
           <div class="Q5">
             <label for="Question5">Favorite Color:</label>
-            <select id="color" name="color">
+            <select id="color">
               <option value="red">Red</option>
               <option value="green">Green</option>
               <option value="pink">Pink</option>
@@ -64,16 +64,18 @@
         </form>
 
         <div class="hidden" id="Python">
-          <!-- <img src="/img/python.jpg" alt="snake"> -->
+          <!-- <img href="/img/python.jpg" alt="snake"> -->
           <p>python</p>
         </div>
 
         <div class="hidden" id="C#">
           <!-- <img src="/img/c#.png" alt="See Sharp">    -->
+          <p>C#</p>
         </div>
 
         <div class="hidden" id="JavaScript">
           <!-- <img src="/img/javascript.jpg" alt="java script"> -->
+          <p>JavaScript</p>
         </div>
 
       </div>
