@@ -19,9 +19,10 @@ function hideResults() {
     let genre = document.getElementById("#genre");
     let color = document.getElementById("#color");
 
-    if ( 1 === 1 ) {
+    if ( celebrity === "robert" ) {
       window.alert("1 equals 1")
-    
+      return
+    }
     
     window.onload = function() {
       document.querySelector("form").onsubmit = function(event) {
@@ -31,5 +32,5 @@ function hideResults() {
         const height = parseInt(document.querySelector("input#height").value);
       };
   };
-  }
 }
+  }
