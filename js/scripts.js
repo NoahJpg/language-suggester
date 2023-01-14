@@ -13,15 +13,16 @@ function hideResults() {
     event.preventDefault();
     
 
-    let celebrity = document.getElementById("celebrity");
-    let media = document.getElementById("#media");
+    let celebrity = document.getElementById("#celebrity");
+    let media = document.getElementById("media");
     let direction = document.getElementById("#direction");
     let genre = document.getElementById("#genre");
     let color = document.getElementById("#color");
 
-    if ( celebrity === "robert" ) {
-      window.alert("1 equals 1")
-      return
+    if ( media === "television" ) {
+      window.alert("something is working")
+    } else {
+      window.alert("nothing is working")
     }
     
     window.onload = function() {
