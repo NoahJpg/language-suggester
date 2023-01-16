@@ -1,37 +1,36 @@
-window.onload = function() {
-  const form = document.querySelector("form");
-
+let python = document.getElementById("Python")
+let cSharp = document.getElementById("CSharp")
+let javaScript = document.getElementById("JavaScript")
+let form = document.querySelector("form");
 
 function hideResults() {
-  document.getElementById("python").setAttribute("class", "hidden");
-  document.getElementById("C#").setAttribute("class", "hidden");
-  document.getElementById("JavaScript").setAttribute("class", "hidden");
+  python.setAttribute("class", "hidden");
+  cSharp.setAttribute("class", "hidden");
+  javaScript.setAttribute("class", "hidden");
 }
-
-
+function showResults() {
+  python.removeAttribute("class", "hidden");
+  cSharp.removeAttribute("class", "hidden");
+  javaScript.removeAttribute("class", "hidden");
+}
   form.onsubmit = function(event) {
     event.preventDefault();
-    
+    showResults();
+    const celebrityResult = toString(document.getElementById("input#celebrity"));
+    const mediaResult = toString(document.getElementById("input#media"));
+    const directionResult = toString(document.getElementById("input#direction"));
+    const genreResult = toString(document.getElementById("input#genre"));
+    const colorResult = toString(document.getElementById("input#color"));
 
-    let celebrity = document.getElementById("#celebrity");
-    let media = document.getElementById("media");
-    let direction = document.getElementById("#direction");
-    let genre = document.getElementById("#genre");
-    let color = document.getElementById("#color");
-
-    if ( media === "television" ) {
-      window.alert("something is working")
-    } else {
-      window.alert("nothing is working")
-    }
-    
-    window.onload = function() {
-      document.querySelector("form").onsubmit = function(event) {
-        event.preventDefault();
-        hideResults();
-        const age = parseInt(document.querySelector("input#age").value);
-        const height = parseInt(document.querySelector("input#height").value);
-      };
+    if (celebrityResult && mediaResult && directionResult && genreResult && colorResult) {
+      if (mediaResult === "television" ) {
+        window.alert("something is working");
+      } else if (directionResult === "up") {
+        window.alert("nothing is working");
+      } else {
+        window.alert("IT DOES NOT WORK YET")
+      }
+    };
   };
-}
-  }
+
+

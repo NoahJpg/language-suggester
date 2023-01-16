@@ -7,11 +7,12 @@
   <script src="js/scripts.js"></script>
 </head>
   <body>
+
     <div class="container">
       <h1>Programming Language Suggester</h1>
       <p>These questions will decide your fate for the next several months. <em>Choose wisely!</em></p>
       <div class="questions">
-        <form id="form">
+        <form id="results">
           <div class="Q1">
             <label for="Question1">Pick a celebrity:</label>
             <select id="celebrity">
@@ -58,26 +59,23 @@
               <option value="purple">Purple</option>
             </select>
           </div>
-
           <button type="submit">Submit!</button>
-
         </form>
 
-        <div class="hidden" id="Python">
+        <div id="Python" class="hidden">
           <!-- <img href="/img/python.jpg" alt="snake"> -->
           <p>python</p>
         </div>
 
-        <div class="hidden" id="C#">
+        <div id="CSharp" class="hidden">
           <!-- <img src="/img/c#.png" alt="See Sharp">    -->
           <p>C#</p>
         </div>
 
-        <div class="hidden" id="JavaScript">
+        <div id="JavaScript"class="hidden">
           <!-- <img src="/img/javascript.jpg" alt="java script"> -->
           <p>JavaScript</p>
         </div>
-
       </div>
     </div>
   </body>
