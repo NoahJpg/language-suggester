@@ -23,13 +23,13 @@ function showResults() {
     const colorResult = toString(document.getElementById("input#color"));
 
     if (celebrityResult && mediaResult && directionResult && genreResult && colorResult) {
-      if (mediaResult === "television" ) {
-        window.alert("something is working");
-      } else if (directionResult === "up") {
-        window.alert("nothing is working");
-      } else {
-        window.alert("IT DOES NOT WORK YET")
-      }
+      if ((celebrityResult === "robert") && (mediaResult === "television") || (directionResult === "nowhere") || (genreResult === "iop" ) || (colorResult === "green")) {
+        function showResults(python);
+      } else if ((celebrityResult === "beyonce") && (mediaResult === "books") || (directionResult === "up") || (genreResult === "shoegaze" ) || (colorResult === "red")) {
+        function showResults(cSharp);
+      } else  ((celebrityResult === "willem") || (mediaResult === "videogames") || (directionResult === "down") || (genreResult === "horror-country" ) || (colorResult === "purple")); { 
+        function showResults(JavaScript);
+      };
     };
   };
 
