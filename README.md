@@ -30,6 +30,7 @@ _if the page does not work, instead, right click index.html, select "Open with" 
 
 * _The submit button will not reval any programming languages_
 * _The submit button will not store any of the user responses_
+* _Images selected for coding langauges won't load on webpage_
 * _There is basically no functionality at this time_
 
 

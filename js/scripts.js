@@ -23,14 +23,17 @@ function showResults() {
     const colorResult = toString(document.getElementById("input#color"));
 
     if (celebrityResult && mediaResult && directionResult && genreResult && colorResult) {
-      if ((celebrityResult === "robert") && (mediaResult === "television") || (directionResult === "nowhere") || (genreResult === "iop" ) || (colorResult === "green")) {
-        function showResults(python);
-      } else if ((celebrityResult === "beyonce") && (mediaResult === "books") || (directionResult === "up") || (genreResult === "shoegaze" ) || (colorResult === "red")) {
+      if ((celebrityResult === "robert") && (mediaResult === "television") && (directionResult === "nowhere") && (genreResult === "iop" ) || (colorResult === "green")) {
+        function showResults(python)
+      } else if ((celebrityResult === "beyonce") && (mediaResult === "books") && (directionResult === "up") && (genreResult === "shoegaze" ) || (colorResult === "red")) {
         function showResults(cSharp);
-      } else  ((celebrityResult === "willem") || (mediaResult === "videogames") || (directionResult === "down") || (genreResult === "horror-country" ) || (colorResult === "purple")); { 
+      } else if ((celebrityResult === "willem") && (mediaResult === "videogames") && (directionResult === "down") && (genreResult === "horror-country" ) || (colorResult === "purple")) { 
         function showResults(JavaScript);
+      } else {
+        function showResults(python)
       };
     };
   };
+  
 
 
