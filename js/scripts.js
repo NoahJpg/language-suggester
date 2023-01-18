@@ -1,39 +1,50 @@
-let python = document.getElementById("Python")
-let cSharp = document.getElementById("CSharp")
-let javaScript = document.getElementById("JavaScript")
-let form = document.querySelector("form");
+function formSubmit(event) {
+  event.preventDefault();
+  // let python = document.getElementById("Python").value;
+  // let cSharp = document.getElementById("CSharp").value;
+  // let javaScript = document.getElementById("JavaScript").value;
+  let celebrityResult = document.getElementById("input#celebrity").value;
+  let mediaResult = document.getElementById("input#media").value;
+  let directionResult = document.getElementById("input#direction").value;
+  let genreResult = document.getElementById("input#genre").value;
+  let colorResult = document.getElementById("input#color").value;
+  const form = document.getElementById("results");
 
-function hideResults() {
-  python.setAttribute("class", "hidden");
-  cSharp.setAttribute("class", "hidden");
-  javaScript.setAttribute("class", "hidden");
-}
-function showResults() {
-  python.removeAttribute("class", "hidden");
-  cSharp.removeAttribute("class", "hidden");
-  javaScript.removeAttribute("class", "hidden");
-}
+console.log(celebrityResult + " - celeb");
+
+// function hideResults() {
+//   python.setAttribute("class", "hidden");
+//   cSharp.setAttribute("class", "hidden");
+//   javaScript.setAttribute("class", "hidden");
+// }
+// function showResults() {
+//   python.Element.removeAttribute("class", "hidden");
+//   cSharp.removeAttribute("class", "hidden");
+//   javaScript.removeAttribute("class", "hidden");
+// }
+
+
   form.onsubmit = function(event) {
     event.preventDefault();
-    showResults();
-    const celebrityResult = toString(document.getElementById("input#celebrity"));
-    const mediaResult = toString(document.getElementById("input#media"));
-    const directionResult = toString(document.getElementById("input#direction"));
-    const genreResult = toString(document.getElementById("input#genre"));
-    const colorResult = toString(document.getElementById("input#color"));
+
 
     if (celebrityResult && mediaResult && directionResult && genreResult && colorResult) {
       if ((celebrityResult === "robert") && (mediaResult === "television") && (directionResult === "nowhere") && (genreResult === "iop" ) || (colorResult === "green")) {
-        function showResults(python)
+        showResults(python);
       } else if ((celebrityResult === "beyonce") && (mediaResult === "books") && (directionResult === "up") && (genreResult === "shoegaze" ) || (colorResult === "red")) {
-        function showResults(cSharp);
+        showResults(cSharp);
       } else if ((celebrityResult === "willem") && (mediaResult === "videogames") && (directionResult === "down") && (genreResult === "horror-country" ) || (colorResult === "purple")) { 
-        function showResults(JavaScript);
+        showResults(JavaScript);
       } else {
-        function showResults(python)
+        showResults(python);
       };
     };
   };
+}
+
+  window.addEventListener("load", function() {
+    results.addEventListener("submit", formSubmit);
+  })
   
 
 
