@@ -5,19 +5,15 @@ function hideResults() {
 }
 function showResults(language) {
   language.removeAttribute("class", "hidden");
-  // python.removeAttribute("class", "hidden");
-  // cSharp.removeAttribute("class", "hidden");
-  // javaScript.removeAttribute("class", "hidden");
 }
 window.onload = function(event) {
 let form = document.querySelector("form");
 
   form.onsubmit = function(event) {
-    console.log("on submit working")
     event.preventDefault();
-    let python = document.getElementById("Python")
-    let cSharp = document.getElementById("CSharp")
-    let javaScript = document.getElementById("JavaScript")
+    let python = document.getElementById("Python");
+    let cSharp = document.getElementById("CSharp");
+    let javaScript = document.getElementById("JavaScript");
     
     const celebrityResult = document.getElementById("celebrity").value;
     const mediaResult = document.getElementById("media").value;
@@ -26,14 +22,14 @@ let form = document.querySelector("form");
     const colorResult = document.getElementById("color").value;
 
     if (celebrityResult && mediaResult && directionResult && genreResult && colorResult) {
-      if ((celebrityResult === "robert") || (mediaResult === "television") || (directionResult === "nowhere") || (genreResult === "iop" ) || (colorResult === "green")) {
+      if ((celebrityResult === "robert") || (mediaResult === "television")) {
         showResults(python);
-      } else if ((celebrityResult === "beyonce") || (mediaResult === "books") || (directionResult === "up") || (genreResult === "shoegaze" ) || (colorResult === "red")) {
+      } else if ((celebrityResult === "beyonce") || (mediaResult === "books") || (directionResult === "up")) {
         showResults(cSharp);
-      } else if ((celebrityResult === "willem") || (mediaResult === "videogames") || (directionResult === "down") || (genreResult === "horror-country" ) || (colorResult === "purple")) { 
+      } else if ((celebrityResult === "willem") && (genreResult === "horror-country" ) || (colorResult === "purple")) { 
         showResults(javaScript);
       } else {
-        showResults(cSharp)
+        showResults(python)
       };
     };
   };
