@@ -10,6 +10,7 @@ https://github.com/NoahJpg/language-suggester.git
 
 * _HTML_
 * _CSS_
+* _JavaScript_
 * _Bootstrap_
 
 ## Description
