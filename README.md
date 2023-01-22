@@ -29,13 +29,7 @@ _if the page does not work, instead, right click index.html, select "Open with" 
 
 ## Known Bugs
 
-* _The submit button will not reval any programming languages_
-* _The submit button will not store any of the user responses_
-* _Images selected for coding langauges won't load on webpage_
-* _There is basically no functionality at this time_
-
-
-
+* _There are no known bugs at this time_
 
 
 If you have any issues running this HTML site, then I have failed on a massive level. Please reach out to me at noahatkinson1.1@gmail.com or feel free to edit the code yourself if you feel so inclined.
