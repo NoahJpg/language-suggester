@@ -40,7 +40,7 @@ _if the page does not work, instead, right click index.html, select "Open with" 
 
 If you have any issues running this HTML site, then I have failed on a massive level. Please reach out to me at noahatkinson1.1@gmail.com or feel free to edit the code yourself if you feel so inclined.
 
-##MIT License
+## MIT License
 
 Copyright (c) [2023] [Noah Atkinson]
 
