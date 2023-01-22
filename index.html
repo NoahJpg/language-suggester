@@ -2,9 +2,10 @@
 <html lang="en-US">
 <head>
   <title>Programming Language Suggester</title>
+  <script src="js/scripts.js"></script>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link  href="css/styles.css" rel="stylesheet" type="text/css">
-  <script src="js/scripts.js"></script>
+  
 </head>
   <body>
 
@@ -12,7 +13,7 @@
       <h1>Programming Language Suggester</h1>
       <p>These questions will decide your fate for the next several months. <em>Choose wisely!</em></p>
       <div class="questions">
-        <form id="results">
+        <form id="questionForm">
           <div class="Q1">
             <label for="Question1">Pick a celebrity:</label>
             <select id="celebrity">
@@ -60,21 +61,22 @@
               <option value="purple">Purple</option>
             </select>
           </div>
-          <button type="submit">Submit!</button>
+          <button type="submit" >Submit!</input> 
         </form>
+        <br>
         <div id="Python" class="hidden">
           <p>python</p>
-          <img src="./img/python.jpg" alt="snake">
+          <img src="./img/python.jpg" alt="snake" size = "20px">
         </div>
 
         <div id="CSharp" class="hidden">
           <p>C#</p>
-          <img src="./img/csharp.jpg" alt="See Sharp">   
+          <img src="./img/csharp.jpg" alt="See Sharp" size = "50px">   
         </div>
 
         <div id="JavaScript"class="hidden">
           <p>JavaScript</p>
-          <img src="./img/javascript.jpg" alt="java script" size="200px">
+          <img src="./img/javascript.jpg" alt="java script" size="100px">
         </div>
       </div>
     </div>

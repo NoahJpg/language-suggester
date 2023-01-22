@@ -1,8 +1,16 @@
-function hideResults() {
+function hidePython() {
+  let python = document.getElementById("Python");
   python.setAttribute("class", "hidden");
-  cSharp.setAttribute("class", "hidden");
+}
+function hideCSharp() {
+  let cSharp = document.getElementById("CSharp");
+  CSharp.setAttribute("class", "hidden");
+}
+function hideJavaScript() {
+  let javaScript = document.getElementById("JavaScript");
   javaScript.setAttribute("class", "hidden");
 }
+
 function showResults(language) {
   language.removeAttribute("class", "hidden");
 }
@@ -23,12 +31,20 @@ let form = document.querySelector("form");
 
     if (celebrityResult && mediaResult && directionResult && genreResult && colorResult) {
       if ((celebrityResult === "robert") || (mediaResult === "television")) {
+        hideCSharp();
+        hideJavaScript();
         showResults(python);
-      } else if ((celebrityResult === "beyonce") || (mediaResult === "books") || (directionResult === "up")) {
+      } else if ((celebrityResult === "beyonce") || (mediaResult === "books")) {
+        hidePython();
+        hideJavaScript();
         showResults(cSharp);
       } else if ((celebrityResult === "willem") && (genreResult === "horror-country" ) || (colorResult === "purple")) { 
+        hidePython();
+        hideCSharp();
         showResults(javaScript);
       } else {
+        hideCSharp();
+        hideJavaScript();
         showResults(python)
       };
     };
